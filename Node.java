@@ -1,8 +1,9 @@
-class Node<T extends Comparable<?>> {
-    T data;
+class Node<T extends Comparable<T>> {
+    T value;
     Node<T> left, right;
-    public Node(T data) {
-        this.data = data;
-        this.left = this.right = null;
+
+    public Node(T item) {
+        this.value = item;
+        left = right = null;
     }
 }
